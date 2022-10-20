@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Roboto:wght@300;400&display=swap');
+
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Alice';
+}
+
+nav {
+  z-index: 1;
+  top: 0;
+  padding-top: 5px;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  background-color: #f9f7f2;
+  opacity: 0.9;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  width: 150px;
+}
+
+.leftBar {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.rightBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+nav a {
+  font-family: 'Alice', sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+}
+
+nav li {
+  padding: 0 8px;
+  padding-bottom: 10px;
+  display: inline;
+  list-style-type: none;
+}
+
+li a:hover {
+  animation: fadeIn 1s;
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+/* CAROUSEL */
+
+.carousel-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.carousel-container ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.carousel-item {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 200ms opacity ease-in-out;
+  transition-delay: 200ms;
+}
+
+.carousel-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.slide[data-active] {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0ms;
+}
+
+.carousel-button {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  font-size: 4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  border-radius: 0.25rem;
+  padding: 0 0.5rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.carousel-button:focus {
+  outline: 1px solid black;
+}
+
+.carousel-button.prev {
+  left: 1rem;
+}
+
+.carousel-button.next {
+  right: 1rem;
+}
+
+#prev-btn,
+#next-btn {
+  cursor: pointer;
+  position: absolute;
+  bottom: -40px;
+  font-size: 14pt;
+  background-color: #1a1004;
+}
+
+#prev-btn {
+  left: 0;
+}
+#next-btn {
+  right: 0;
+}
+
+.transition {
+  transition: 0.7s;
+}
+
+.main-container {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto;
+  gap: 4rem;
+  /* grid-column: auto; */
+}
+
+.product-item {
+  background-color: aqua;
+  width: 250px;
+  height: 250px;
+}
+
+.product-item img {
+  width: inherit;
+}
+
+footer {
+  margin: 3rem 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  color: #7e7e7e;
+  font-family: 'Roboto';
+  text-align: center;
+  font-weight: bold;
+}
+
+footer .leftBar {
+  flex-direction: column;
+  max-width: 500px;
+  text-align: left;
+  align-items: flex-start;
+}
+
+#footerMainLogo {
+  width: 250px;
+}
+
+.footerLogo {
+  margin: 0 2rem;
+  opacity: 0.5;
+  width: 36px;
+  height: 36px;
+}
+
+@media screen and (max-width: 600px) {
+}
+
+@media screen and (max-width: 375px) {
+}
