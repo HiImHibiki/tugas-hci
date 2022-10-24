@@ -16,3 +16,18 @@ buttons.forEach((button) => {
     delete activeSlide.dataset.active;
   });
 });
+
+const optionItem = document.querySelectorAll('.option-item');
+const descriptionContainer = document.querySelectorAll(
+  '.description-container'
+);
+
+console.log(optionItem);
+console.log(descriptionContainer[0]);
+
+const changeActiveDescription = (i) => {
+  descriptionContainer.forEach((i) => {
+    i.style.display = 'none';
+  });
+  descriptionContainer[i].style.display = 'flex';
+};
