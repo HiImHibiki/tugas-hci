@@ -31,3 +31,18 @@ const changeActiveDescription = (i) => {
   });
   descriptionContainer[i].style.display = 'flex';
 };
+
+const productItem = document.querySelectorAll('.product-item');
+console.log(productItem[0].dataset.cat);
+
+const changeActiveItem = (category) => {
+  productItem.forEach((i) => {
+    if (!category) {
+      i.style.display = 'flex';
+    } else if (i.dataset.cat == category) {
+      i.style.display = 'flex';
+    } else {
+      i.style.display = 'none';
+    }
+  });
+};
