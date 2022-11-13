@@ -14,11 +14,14 @@
       <!-- Header & Navbar taro sini -->
       <nav>
         <div class="leftBar">
-          <a href="../index.html"
-            ><img src="../assets/logo_sideways.png" id="logo" alt="logo"
-          /></a>
+          <a class="hamburger" href="javascript:void(0);" onclick="myFunction()">
+            <i><img src="../assets/Hamburger_icon.svg" alt=""></i>
+          </a>
+          <a href="../index.html">
+            <img src="../assets/logo_sideways.png" id="logo" alt="logo"/>
+          </a>
         </div>
-        <div class="rightBar">
+        <div class="rightBar hide" id="rightnav">
           <ul>
             <li class="dropdown">
               <a href="./">Jewelry</a>
@@ -31,6 +34,8 @@
             <li><a href="../about-us.html">About Us</a></li>
             <li><a href="../membership.html">Membership</a></li>
           </ul>
+        </div>
+        <div class="hamburger">
         </div>
       </nav>
     </header>
@@ -184,3 +189,14 @@
     </footer>
   </body>
 </html>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("rightnav");
+    if (x.className === "rightBar") {
+      x.className += " hide";
+    } else {
+      x.className = "rightBar";
+    }
+  }
+</script>
