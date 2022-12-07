@@ -1,0 +1,33 @@
+main {
+  min-height: 50vh;
+  align-items: center;
+}
+
+a {
+  font: initial;
+  color: inherit;
+}
+
+.promo-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 3rem;
+}
+
+.promo-item {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  width: 250px;
+  overflow: hidden;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.promo-item:hover {
+  opacity: 50%;
+}
+
+.promo-item img {
+  width: inherit;
+}

@@ -4,17 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="./assets/index.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script defer src="./scripts/validator.js"></script>
     <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/homepage.css" />
     <title>Golden Circle</title>
   </head>
   <body>
     <header>
-      <!-- Header & Navbar taro sini -->
       <nav>
         <div class="leftBar">
-          <a href="index.html"
+          <a href="./index.html"
             ><img src="./assets/logo_sideways.png" id="logo" alt="logo"
           /></a>
         </div>
@@ -27,9 +26,9 @@
                 <a href="./jewelry/whitegold.html">White Gold</a>
               </div>
             </li>
-            <li><a href="promotion.html">Promotions</a></li>
-            <li><a href="about-us.html">About Us</a></li>
-            <li><a href="membership.html">Membership</a></li>
+            <li><a href="./promotion.html">Promotions</a></li>
+            <li><a href="./about-us.html">About Us</a></li>
+            <li><a href="./membership.html">Membership</a></li>
           </ul>
         </div>
       </nav>
@@ -37,113 +36,139 @@
     <main>
       <!-- Content taro sini -->
       <!-- <div class="carousel-container">
-        <ul>
-          <li id="carousel-item active">
-            <img src="https://picsum.photos/1000/500" alt="item1" />
-          </li>
-          <li id="carousel-item">
-            <img src="https://picsum.photos/1000/500" alt="item2" />
-          </li>
-          <li id="carousel-item">
-            <img src="https://picsum.photos/1000/500" alt="item3" />
-          </li>
-        </ul>
-        <button id="carousel-button prev-btn">&#8656;</button>
-        <button id="carousel-button next-btn">&#8658;</button>
+        <img src="./assets/arrow-left.png" class="prev-button" alt="prev" />
+        <div class="carousel-image">
+          <img
+            src="https://picsum.photos/1000/500"
+            alt="item1"
+            class="active"
+          />
+          <img src="https://picsum.photos/1000/500" alt="item2" />
+          <img src="https://picsum.photos/1000/500" alt="item3" />
+        </div>
+        <img src="./assets/arrow-right.png" class="next-button" alt="next" />
       </div> -->
       <div class="main-container">
         <h1>Hottest Product</h1>
         <div class="product-container">
           <div class="product-item">
-            <img src="./assets/product-1.png" alt="" />
-            <p>Kalunggggg</p>
+            <img src="./assets/bracelet/bracelet-1.png" alt="bracelet-1" />
+            <p class="p-primary">Tennis Deluxe Bracelet</p>
+            <p class="p-secondary">Round cut, White, White gold</p>
           </div>
           <div class="product-item">
-            <img src="./assets/product-1.png" alt="" />
-            <p>Kalunggggg</p>
+            <img src="./assets/necklace/necklace-1.png" alt="necklace-1" />
+            <p class="p-primary">Dancing Swan Necklace</p>
+            <p class="p-secondary">Swan, White, White gold</p>
           </div>
           <div class="product-item">
-            <img src="./assets/product-1.png" alt="" />
-            <p>Kalunggggg</p>
+            <img src="./assets/necklace/necklace-2.png" alt="necklace-2" />
+            <p class="p-primary">Dancing Swan Necklace</p>
+            <p class="p-secondary">Swan, Blue, White gold</p>
           </div>
           <div class="product-item">
-            <img src="./assets/product-1.png" alt="" />
-            <p>Kalunggggg</p>
+            <img src="./assets/ring/ring-1.png" alt="ring-1" />
+            <p class="p-primary">Constella Ring</p>
+            <p class="p-secondary">Set (2), Princess cut, White, White gold</p>
           </div>
           <div class="product-item">
-            <img src="./assets/product-1.png" alt="" />
-            <p>Kalunggggg</p>
+            <img src="./assets/bracelet/bracelet-2.png" alt="bracelet-2" />
+            <p class="p-primary">Subtle Trilogy Bracelet</p>
+            <p class="p-secondary">Round cut, White, White Gold</p>
           </div>
           <div class="product-item">
-            <img src="./assets/product-1.png" alt="" />
-            <p>Kalunggggg</p>
+            <img src="./assets/bracelet/bracelet-3.png" alt="bracelet-3" />
+            <p class="p-primary">Tennis Deluxe Bracelet</p>
+            <p class="p-secondary">Round cut, White, Yellow Gold</p>
           </div>
           <div class="product-item">
-            <img src="./assets/product-1.png" alt="" />
-            <p>Kalunggggg</p>
+            <img src="./assets/ring/ring-2.png" alt="ring-2" />
+            <p class="p-primary">Attract Ring</p>
+            <p class="p-secondary">Round cut, White, White Gold</p>
           </div>
           <div class="product-item">
-            <img src="./assets/product-1.png" alt="" />
-            <p>Kalunggggg</p>
+            <img src="./assets/necklace/necklace-3.png" alt="necklace-3" />
+            <p class="p-primary">Attract Necklace</p>
+            <p class="p-secondary">Round cut, White, White Gold</p>
           </div>
-        </div>
         </div>
       </div>
       <div class="main-container">
         <h1>Recommendation</h1>
         <div class="product-container">
           <div class="product-item">
-            <img src="./assets/product-1.png" alt="" />
-            <p>Kalunggggg</p>
+            <img src="./assets/ring/ring-3.png" alt="ring-3" />
+            <p class="p-primary">Constella Ring</p>
+            <p class="p-secondary">Set (2), Round cut, White, Yellow gold</p>
           </div>
           <div class="product-item">
-            <img src="./assets/product-1.png" alt="" />
-            <p>Kalunggggg</p>
+            <img src="./assets/bracelet/bracelet-4.png" alt="bracelet-4" />
+            <p class="p-primary">Dextera Bracelet</p>
+            <p class="p-secondary">Pave, Mixed links, White, Yellow Gold</p>
           </div>
           <div class="product-item">
-            <img src="./assets/product-1.png" alt="" />
-            <p>Kalunggggg</p>
+            <img src="./assets/bracelet/bracelet-5.png" alt="bracelet-5" />
+            <p class="p-primary">Swarovski Remix Collection Bracelet</p>
+            <p class="p-secondary">
+              Magnetic closure, Bee, Multicolored, Yellow Gold
+            </p>
           </div>
           <div class="product-item">
-            <img src="./assets/product-1.png" alt="" />
-            <p>Kalunggggg</p>
+            <img src="./assets/earrings/earrings-1.png" alt="earrings-1" />
+            <p class="p-primary">Harmonia Stud Earrings</p>
+            <p class="p-secondary">Cushion cut, Gold tone, Yellow Gold</p>
           </div>
           <div class="product-item">
-            <img src="./assets/product-1.png" alt="" />
-            <p>Kalunggggg</p>
+            <img src="./assets/earrings/earrings-2.png" alt="earrings-2" />
+            <p class="p-primary">Angelic Stud Earrings</p>
+            <p class="p-secondary">Round cut, White, Yellow Gold</p>
           </div>
           <div class="product-item">
-            <img src="./assets/product-1.png" alt="" />
-            <p>Kalunggggg</p>
+            <img src="./assets/bracelet/bracelet-3.png" alt="bracelet-3" />
+            <p class="p-primary">Dextera Hoop Earrings</p>
+            <p class="p-secondary">Small, White, Yellow Gold</p>
           </div>
           <div class="product-item">
-            <img src="./assets/product-1.png" alt="" />
-            <p>Kalunggggg</p>
+            <img src="./assets/necklace/necklace-4.png" alt="necklace-4" />
+            <p class="p-primary">Lovely Necklace</p>
+            <p class="p-secondary">Heart, White, Yellow Gold</p>
           </div>
           <div class="product-item">
-            <img src="./assets/product-1.png" alt="" />
-            <p>Kalunggggg</p>
+            <img src="./assets/earrings/earrings-3.png" alt="earrings-3" />
+            <p class="p-primary">Louison Stud Earrings</p>
+            <p class="p-secondary">Leaf, White, White Gold</p>
           </div>
         </div>
       </div>
     </main>
     <footer>
-      <!-- Footer taro sini -->
       <div class="leftBar">
         <a href="index.html"
           ><img src="./assets/logo_sideways.png" id="footerMainLogo" alt="logo"
         /></a>
-        <p>
+        <p class="p-secondary">
           Copyright ⓒ 2022 Golden Circle. All rights reserved.<br /><br />
           Golden Circle and the Golden Circle logo are registered and trademarks
           of Golden Circle.
         </p>
       </div>
       <div class="rightBar">
-        <img class="footerLogo" src="./assets/facebook.png" alt="facebook" />
-        <img class="footerLogo" src="./assets/instagram.png" alt="facebook" />
-        <img class="footerLogo" src="./assets/twitter.png" alt="facebook" />
-        <img class="footerLogo" src="./assets/youtube.png" alt="facebook" />
+        <a href="https://www.facebook.com" target="_blank">
+          <img class="footerLogo" src="./assets/facebook.png" alt="facebook" />
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+          <img
+            class="footerLogo"
+            src="./assets/instagram.png"
+            alt="instagram"
+          />
+        </a>
+        <a href="https://www.twitter.com" target="_blank">
+          <img class="footerLogo" src="./assets/twitter.png" alt="twitter" />
+        </a>
+        <a href="https://www.youtube.com" target="_blank">
+          <img class="footerLogo" src="./assets/youtube.png" alt="youtube" />
+        </a>
       </div>
     </footer>
   </body>
