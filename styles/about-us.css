@@ -1,4 +1,16 @@
 main {
   min-height: 50vh;
   align-items: center;
+  margin: 3rem;
+}
+
+.about-container {
+  display: flex;
+  text-align: justify;
+  gap: 2rem;
+}
+
+.about-container img {
+  width: 550px;
+  height: 400px;
 }

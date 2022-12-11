@@ -4,10 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="../scripts/index.js"></script>
+    <script defer src="../scripts/filter.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="../styles/index.css" />
-    <title>Golden Circle</title>
+    <link rel="stylesheet" href="../styles/jewelry.css" />
+    <link rel="stylesheet" href="../styles/whitegold.css" />
+    <title>Jewelry</title>
   </head>
   <body>
     <header>
@@ -35,128 +37,71 @@
       </nav>
     </header>
     <main>
+      <h1 class="page-title">Category</h1>
       <div class="main-container">
-        <h1>Category</h1>
-        <!-- <div class="description-item-container">
-          <div class="description-item">
-            <div class="image-box"></div>
-            <p>Ring</p>
-          </div>
-          <div class="description-item">
-            <div class="image-box"></div>
-            <p>Bracelet</p>
-          </div>
-          <div class="description-item">
-            <div class="image-box"></div>
-            <p>Necklace</p>
-          </div>
-          <div class="description-item">
-            <div class="image-box"></div>
-            <p>Earrings</p>
-          </div>
-        </div> -->
         <div class="options-container-grid">
           <div class="option-item" onclick="changeActiveItem();">
-            <img src="../assets/yellowgold.png" alt="yellowgold" />
+            <img src="../assets/whitegold.png" alt="whitegold" />
             <h2>All Items</h2>
           </div>
           <div class="option-item" onclick="changeActiveItem('ring');">
-            <img src="../assets/yellowgold.png" alt="yellowgold" />
+            <img src="../assets/ring/ring-1.png" alt="ring-1" />
             <h2>Ring</h2>
           </div>
           <div class="option-item" onclick="changeActiveItem('bracelet');">
-            <img src="../assets/yellowgold.png" alt="yellowgold" />
+            <img src="../assets/bracelet/bracelet-1.png" alt="bracelet-1" />
             <h2>Bracelet</h2>
           </div>
           <div class="option-item" onclick="changeActiveItem('necklace');">
-            <img src="../assets/yellowgold.png" alt="yellowgold" />
+            <img src="../assets/necklace/necklace-1.png" alt="necklace-1" />
             <h2>Necklace</h2>
           </div>
           <div class="option-item" onclick="changeActiveItem('earrings');">
-            <img src="../assets/yellowgold.png" alt="yellowgold" />
+            <img src="../assets/earrings/earrings-3.png" alt="earrings-3" />
             <h2>Earrings</h2>
           </div>
-      </div>
-      <div class="product-container">
-        <div class="product-item" data-cat="ring">
-          <img src="./assets/product-1.png" alt="" />
-          <p>RING</p>
         </div>
-        <div class="product-item" data-cat="bracelet">
-          <img src="./assets/product-1.png" alt="" />
-          <p>BRACELET</p>
-        </div>
-        <div class="product-item" data-cat="necklace">
-          <img src="./assets/product-1.png" alt="" />
-          <p>NECKLACE</p>
-        </div>
-        <div class="product-item" data-cat="earrings">
-          <img src="./assets/product-1.png"  alt="" />
-          <p>EARRING</p>
-        </div>
-        <div class="product-item" data-cat="ring">
-          <img src="./assets/product-1.png" alt="" />
-          <p>RING</p>
-        </div>
-        <div class="product-item" data-cat="bracelet">
-          <img src="./assets/product-1.png" alt="" />
-          <p>BRACELET</p>
-        </div>
-        <div class="product-item" data-cat="necklace">
-          <img src="./assets/product-1.png" alt="" />
-          <p>NECKLACE</p>
-        </div>
-        <div class="product-item" data-cat="earrings">
-          <img src="./assets/product-1.png"  alt="" />
-          <p>EARRING</p>
-        </div>
-        <div class="product-item" data-cat="ring">
-          <img src="./assets/product-1.png" alt="" />
-          <p>RING</p>
-        </div>
-        <div class="product-item" data-cat="bracelet">
-          <img src="./assets/product-1.png" alt="" />
-          <p>BRACELET</p>
-        </div>
-        <div class="product-item" data-cat="necklace">
-          <img src="./assets/product-1.png" alt="" />
-          <p>NECKLACE</p>
-        </div>
-        <div class="product-item" data-cat="earrings">
-          <img src="./assets/product-1.png"  alt="" />
-          <p>EARRING</p>
-        </div>
-        <div class="product-item" data-cat="ring">
-          <img src="./assets/product-1.png" alt="" />
-          <p>RING</p>
-        </div>
-        <div class="product-item" data-cat="bracelet">
-          <img src="./assets/product-1.png" alt="" />
-          <p>BRACELET</p>
-        </div>
-        <div class="product-item" data-cat="necklace">
-          <img src="./assets/product-1.png" alt="" />
-          <p>NECKLACE</p>
-        </div>
-        <div class="product-item" data-cat="earrings">
-          <img src="./assets/product-1.png"  alt="" />
-          <p>EARRING</p>
-        </div>
-        <div class="product-item" data-cat="ring">
-          <img src="./assets/product-1.png" alt="" />
-          <p>RING</p>
-        </div>
-        <div class="product-item" data-cat="bracelet">
-          <img src="./assets/product-1.png" alt="" />
-          <p>BRACELET</p>
-        </div>
-        <div class="product-item" data-cat="necklace">
-          <img src="./assets/product-1.png" alt="" />
-          <p>NECKLACE</p>
-        </div>
-        <div class="product-item" data-cat="earrings">
-          <img src="./assets/product-1.png"  alt="" />
-          <p>EARRING</p>
+        <div class="product-container">
+          <div class="product-item" data-cat="ring">
+            <img src="../assets/ring/ring-1.png" alt="ring-1" />
+            <p class="p-primary">Constella Ring</p>
+            <p class="p-secondary">Set (2), Princess cut, White, White gold</p>
+          </div>
+          <div class="product-item" data-cat="bracelet">
+            <img src="../assets/bracelet/bracelet-1.png" alt="bracelet-1" />
+            <p class="p-primary">Tennis Deluxe Bracelet</p>
+            <p class="p-secondary">Round cut, White, White gold</p>
+          </div>
+          <div class="product-item" data-cat="necklace">
+            <img src="../assets/necklace/necklace-1.png" alt="necklace-1" />
+            <p class="p-primary">Dancing Swan Necklace</p>
+            <p class="p-secondary">Swan, White, White gold</p>
+          </div>
+          <div class="product-item" data-cat="earrings">
+            <img src="../assets/earrings/earrings-3.png" alt="earrings-3" />
+            <p class="p-primary">Louison Stud Earrings</p>
+            <p class="p-secondary">Leaf, White, White Gold</p>
+          </div>
+          <div class="product-item" data-cat="necklace">
+            <img src="../assets/necklace/necklace-2.png" alt="necklace-2" />
+            <p class="p-primary">Dancing Swan Necklace</p>
+            <p class="p-secondary">Swan, Blue, White gold</p>
+          </div>
+          <div class="product-item" data-cat="bracelet">
+            <img src="../assets/bracelet/bracelet-2.png" alt="bracelet-2" />
+            <p class="p-primary">Subtle Trilogy Bracelet</p>
+            <p class="p-secondary">Round cut, White, White Gold</p>
+          </div>
+          <div class="product-item" data-cat="ring">
+            <img src="../assets/ring/ring-2.png" alt="ring-2" />
+            <p class="p-primary">Attract Ring</p>
+            <p class="p-secondary">Round cut, White, White Gold</p>
+          </div>
+          <div class="product-item" data-cat="necklace">
+            <img src="../assets/necklace/necklace-3.png" alt="necklace-3" />
+            <p class="p-primary">Attract Necklace</p>
+            <p class="p-secondary">Round cut, White, White Gold</p>
+          </div>
         </div>
       </div>
     </main>

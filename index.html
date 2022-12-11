@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script defer src="./scripts/validator.js"></script>
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/homepage.css" />
@@ -34,20 +35,28 @@
       </nav>
     </header>
     <main>
-      <!-- Content taro sini -->
-      <!-- <div class="carousel-container">
-        <img src="./assets/arrow-left.png" class="prev-button" alt="prev" />
-        <div class="carousel-image">
-          <img
-            src="https://picsum.photos/1000/500"
-            alt="item1"
-            class="active"
-          />
-          <img src="https://picsum.photos/1000/500" alt="item2" />
-          <img src="https://picsum.photos/1000/500" alt="item3" />
+      <div class="container">
+        <h1>Testing Slider</h1>
+
+        <div class="slider-container">
+          <button class="prev slider-control">Prev</button>
+          <button class="next slider-control">Next</button>
+          <ul class="slider" data-slide-duration="800">
+            <li class="slide">
+              <img src="https://picsum.photos/id/1/800/500" alt="" />
+            </li>
+            <li class="slide">
+              <img src="https://picsum.photos/id/15/800/500" alt="" />
+            </li>
+            <li class="slide">
+              <img src="https://picsum.photos/id/25/800/500" alt="" />
+            </li>
+            <li class="slide">
+              <img src="https://picsum.photos/id/38/800/500" alt="" />
+            </li>
+          </ul>
         </div>
-        <img src="./assets/arrow-right.png" class="next-button" alt="next" />
-      </div> -->
+      </div>
       <div class="main-container">
         <h1>Hottest Product</h1>
         <div class="product-container">

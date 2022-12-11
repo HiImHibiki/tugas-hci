@@ -1,21 +1,24 @@
-$(document).ready(function () {
-  $('.next').on('click', function () {
-    var currentImg = $('.active');
-    var nextImg = currentImg.next();
+// Get needed constant value
+const width = $('.slider .slide').width();
+const slideDuration = $('.slider').data('slideDuration');
 
-    if (nextImg.length) {
-      currentImg.removeClass('active').css('z-index', -10);
-      nextImg.addClass('active').css('z-index', 10);
-    }
+// Initialize slide position and move our slider container to the right spot
+$('.slider .slide:last').prependTo($('.slider'));
+$('.slider').css('left', -width);
+
+const handlePrev = () => {
+  $('.slider').animate({ left: 0 }, slideDuration, function () {
+    $('.slider .slide:last').prependTo($('.slider'));
+    $('.slider').css('left', -width);
   });
+};
 
-  $('.prev').on('click', function () {
-    var currentImg = $('.active');
-    var prevImg = currentImg.prev();
-
-    if (prevImg.length) {
-      currentImg.removeClass('active').css('z-index', -10);
-      prevImg.addClass('active').css('z-index', 10);
-    }
+const handleNext = () => {
+  $('.slider').animate({ left: `-=${width}` }, slideDuration, function () {
+    $('.slider .slide:first').appendTo($('.slider'));
+    $('.slider').css('left', -width);
   });
-});
+};
+
+$('.next.slider-control').on('click', () => handleNext());
+$('.prev.slider-control').on('click', () => handlePrev());
