@@ -15,9 +15,14 @@
           <a href="./index.html"
             ><img src="./assets/logo_sideways.png" id="logo" alt="logo"
           /></a>
+          <p>Free delivery for all transactions!</p>
+          <a class="hamburger" href="javascript:void(0);" onclick="myFunction()">
+            <i><img src="../assets/Hamburger_icon.svg" alt=""></i>
+          </a>
         </div>
-        <div class="rightBar">
+        <div class="rightBar hide" id="rightnav">
           <ul>
+            <li><p><strong>Free delivery for all transactions!</strong></p></li>
             <li class="dropdown">
               <a href="./jewelry/">Jewelry</a>
               <div class="dropdown-content">
@@ -131,3 +136,14 @@
     </footer>
   </body>
 </html>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById('rightnav');
+    if (x.className === 'rightBar') {
+      x.className += ' hide';
+    } else {
+      x.className = 'rightBar';
+    }
+  }
+</script>

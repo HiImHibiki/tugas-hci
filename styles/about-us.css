@@ -14,3 +14,47 @@ main {
   width: 550px;
   height: 400px;
 }
+
+@media screen and (max-width: 1200px) {
+  .about-container {
+    display: flex;
+    text-align: justify;
+    gap: 2rem;
+  }
+
+  .about-container img {
+    width: 550px;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .about-container {
+    display: flex;
+    text-align: justify;
+    gap: 2rem;
+  }
+  
+  .about-container img {
+    width: 350px;
+    height: 255px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .about-container {
+    display: block;
+    text-align: justify;
+    gap: 2rem;
+  }
+  
+  .about-container img {
+    width: 100%;
+    height: auto;
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+  
+}
