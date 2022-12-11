@@ -47,6 +47,10 @@ nav {
   margin-right: 1rem;
 }
 
+.hamburger {
+  display: none;
+}
+
 nav a {
   font-family: 'Alice', sans-serif;
   font-size: 18px;

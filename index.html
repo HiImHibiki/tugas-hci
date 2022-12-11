@@ -18,7 +18,7 @@
             ><img src="./assets/logo_sideways.png" id="logo" alt="logo"
           /></a>
         </div>
-        <div class="rightBar">
+        <div class="rightBar hide" id="rightnav">
           <ul>
             <li class="dropdown">
               <a href="./jewelry/">Jewelry</a>
@@ -32,6 +32,7 @@
             <li><a href="./membership.html">Membership</a></li>
           </ul>
         </div>
+        <div class="hamburger"></div>
       </nav>
     </header>
     <main>
@@ -182,3 +183,14 @@
     </footer>
   </body>
 </html>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById('rightnav');
+    if (x.className === 'rightBar') {
+      x.className += ' hide';
+    } else {
+      x.className = 'rightBar';
+    }
+  }
+</script>
