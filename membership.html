@@ -40,17 +40,24 @@
     </header>
     <main>
       <h1 class="page-title">Membership</h1>
-      <div>
-        <input type="text" name="username" placeholder="Username" />
+      <div class="inputs">
+        <input type="text" name="username" placeholder="Name" />
         <input type="email" name="email" placeholder="E-mail" />
         <input type="password" name="password" placeholder="Password" />
         <input
           type="password"
           name="confirm_password"
-          placeholder="Retype password"
+          placeholder="Confirm password"
         />
 
-        <input type="submit" name="register" value="Register input" />
+        <input type="text" name="city" placeholder="City">
+        <input type="text" name="address" placeholder="Address">
+
+        <input type="checkbox" id="tnc">
+        <label for="tnc">I agree to Golden Circle's <a>terms and conditions</a>.</label>
+        <br>
+
+        <input type="submit" name="register" value="Register input" onclick="verify_submission()"/>
         <!-- <button>Register button</button> -->
       </div>
     </main>

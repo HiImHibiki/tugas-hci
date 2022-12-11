@@ -7,6 +7,10 @@ main {
   outline: none;
 }
 
+label a {
+  color: rgb(167, 111, 0);
+}
+
 input[type='text'],
 input[type='email'],
 input[type='password'] {
