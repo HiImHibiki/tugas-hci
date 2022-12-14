@@ -3,8 +3,8 @@ const descriptionContainer = document.querySelectorAll(
   '.description-container'
 );
 
-console.log(optionItem);
-console.log(descriptionContainer[0]);
+// console.log(optionItem);
+// console.log(descriptionContainer[0]);
 
 const changeActiveDescription = (i) => {
   descriptionContainer.forEach((i) => {
@@ -14,7 +14,7 @@ const changeActiveDescription = (i) => {
 };
 
 const productItem = document.querySelectorAll('.product-item');
-console.log(productItem[0].dataset.cat);
+// console.log(productItem[0].dataset.cat);
 
 const changeActiveItem = (category) => {
   productItem.forEach((i) => {
