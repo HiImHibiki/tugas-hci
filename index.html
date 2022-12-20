@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script defer src="./scripts/validator.js"></script>
+    <script defer src="./scripts/carousel.js"></script>
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/homepage.css" />
     <title>Golden Circle</title>
@@ -18,17 +19,23 @@
             ><img src="./assets/logo_sideways.png" id="logo" alt="logo"
           /></a>
           <p>Free delivery for all transactions!</p>
-          <a class="hamburger" href="javascript:void(0);" onclick="myFunction()">
-            <i><img src="./assets/Hamburger_icon.svg" alt=""></i>
+          <a
+            class="hamburger"
+            href="javascript:void(0);"
+            onclick="myFunction()"
+          >
+            <i><img src="./assets/Hamburger_icon.svg" alt="" /></i>
           </a>
         </div>
         <div class="rightBar hide" id="rightnav">
           <ul>
-            <li><p><strong>Free delivery for all transactions!</strong></p></li>
+            <li>
+              <p><strong>Free delivery for all transactions!</strong></p>
+            </li>
             <li class="dropdown">
               <a href="./jewelry/">Jewelry</a>
               <div class="dropdown-content">
-                <a href="./jewelry/whitegold.html">Yellow Gold</a>
+                <a href="./jewelry/yellowgold.html">Yellow Gold</a>
                 <a href="./jewelry/whitegold.html">White Gold</a>
               </div>
             </li>
@@ -41,27 +48,23 @@
       </nav>
     </header>
     <main>
-      <div class="container">
-        <h1>Testing Slider</h1>
-
-        <div class="slider-container">
-          <button class="prev slider-control">Prev</button>
-          <button class="next slider-control">Next</button>
-          <ul class="slider" data-slide-duration="800">
-            <li class="slide">
-              <img src="https://picsum.photos/id/1/800/500" alt="" />
-            </li>
-            <li class="slide">
-              <img src="https://picsum.photos/id/15/800/500" alt="" />
-            </li>
-            <li class="slide">
-              <img src="https://picsum.photos/id/25/800/500" alt="" />
-            </li>
-            <li class="slide">
-              <img src="https://picsum.photos/id/38/800/500" alt="" />
-            </li>
-          </ul>
-        </div>
+      <div class="slider-container">
+        <button class="prev slider-control">&#8249;</button>
+        <button class="next slider-control">&#8250;</button>
+        <ul class="slider" data-slide-duration="800">
+          <li class="slide">
+            <img src="https://picsum.photos/id/1/1200/800" alt="" />
+          </li>
+          <li class="slide">
+            <img src="https://picsum.photos/id/15/1200/800" alt="" />
+          </li>
+          <li class="slide">
+            <img src="https://picsum.photos/id/25/1200/800" alt="" />
+          </li>
+          <li class="slide">
+            <img src="https://picsum.photos/id/38/1200/800" alt="" />
+          </li>
+        </ul>
       </div>
       <div class="main-container">
         <h1>Hottest Product</h1>

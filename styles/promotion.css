@@ -31,3 +31,24 @@ a {
 .promo-item img {
   width: inherit;
 }
+
+@media screen and (max-width: 900px) {
+  .promo-item {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .promo-container {
+    grid-template-columns: auto auto;
+  }
+  .promo-item {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .promo-item {
+    width: 120px;
+  }
+}

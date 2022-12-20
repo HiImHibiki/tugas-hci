@@ -14,20 +14,26 @@
       <nav>
         <div class="leftBar">
           <a href="../index.html">
-            <img src="../assets/logo_sideways.png" id="logo" alt="logo"/>
+            <img src="../assets/logo_sideways.png" id="logo" alt="logo" />
           </a>
           <p>Free delivery for all transactions!</p>
-          <a class="hamburger" href="javascript:void(0);" onclick="myFunction()">
-            <i><img src="../assets/Hamburger_icon.svg" alt=""></i>
+          <a
+            class="hamburger"
+            href="javascript:void(0);"
+            onclick="myFunction()"
+          >
+            <i><img src="../assets/Hamburger_icon.svg" alt="" /></i>
           </a>
         </div>
         <div class="rightBar hide" id="rightnav">
           <ul>
-            <li><p><strong>Free delivery for all transactions!</strong></p></li>
+            <li>
+              <p><strong>Free delivery for all transactions!</strong></p>
+            </li>
             <li class="dropdown">
               <a href="../jewelry/">Jewelry</a>
               <div class="dropdown-content">
-                <a href="../jewelry/whitegold.html">Yellow Gold</a>
+                <a href="../jewelry/yellowgold.html">Yellow Gold</a>
                 <a href="../jewelry/whitegold.html">White Gold</a>
               </div>
             </li>
@@ -36,8 +42,7 @@
             <li><a href="../membership.html">Membership</a></li>
           </ul>
         </div>
-        <div class="hamburger">
-        </div>
+        <div class="hamburger"></div>
       </nav>
     </header>
     <main>
@@ -273,11 +278,11 @@
 
 <script>
   function myFunction() {
-    var x = document.getElementById("rightnav");
-    if (x.className === "rightBar") {
-      x.className += " hide";
+    var x = document.getElementById('rightnav');
+    if (x.className === 'rightBar') {
+      x.className += ' hide';
     } else {
-      x.className = "rightBar";
+      x.className = 'rightBar';
     }
   }
 </script>

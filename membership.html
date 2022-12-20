@@ -17,17 +17,23 @@
             ><img src="./assets/logo_sideways.png" id="logo" alt="logo"
           /></a>
           <p>Free delivery for all transactions!</p>
-          <a class="hamburger" href="javascript:void(0);" onclick="myFunction()">
-            <i><img src="./assets/Hamburger_icon.svg" alt=""></i>
+          <a
+            class="hamburger"
+            href="javascript:void(0);"
+            onclick="myFunction()"
+          >
+            <i><img src="./assets/Hamburger_icon.svg" alt="" /></i>
           </a>
         </div>
         <div class="rightBar hide" id="rightnav">
           <ul>
-            <li><p><strong>Free delivery for all transactions!</strong></p></li>
+            <li>
+              <p><strong>Free delivery for all transactions!</strong></p>
+            </li>
             <li class="dropdown">
               <a href="./jewelry/">Jewelry</a>
               <div class="dropdown-content">
-                <a href="./jewelry/whitegold.html">Yellow Gold</a>
+                <a href="./jewelry/yellowgold.html">Yellow Gold</a>
                 <a href="./jewelry/whitegold.html">White Gold</a>
               </div>
             </li>
@@ -42,9 +48,14 @@
       <h1 class="page-title">Membership</h1>
       <div class="inputs">
         <form>
-          <input type="text" name="username" placeholder="Name" id="username"/>
-          <input type="email" name="email" placeholder="E-mail" id="email"/>
-          <input type="password" name="password" placeholder="Password" id="password"/>
+          <input type="text" name="username" placeholder="Name" id="username" />
+          <input type="email" name="email" placeholder="E-mail" id="email" />
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            id="password"
+          />
           <input
             type="password"
             name="confirm_password"
@@ -52,15 +63,24 @@
             id="confirm_password"
           />
 
-          <input type="text" name="city" placeholder="City" id="city">
-          <input type="text" name="address" placeholder="Address" id="address">
+          <input type="text" name="city" placeholder="City" id="city" />
+          <input
+            type="text"
+            name="address"
+            placeholder="Address"
+            id="address"
+          />
 
-          <input type="checkbox" id="tnc">
-          <label for="tnc">I agree to Golden Circle's <a>terms and conditions</a>.</label>
-          <br>
-          <label for="" id="error" style="color: red;"></label>
-          <br>
-          <button type="button" name="register" onclick="verify_submission()">Register</button>
+          <input type="checkbox" id="tnc" />
+          <label for="tnc"
+            >I agree to Golden Circle's <a>terms and conditions</a>.</label
+          >
+          <br />
+          <label for="" id="error" style="color: red"></label>
+          <br />
+          <button type="button" name="register" onclick="verify_submission()">
+            Register
+          </button>
           <!-- <button>Register button</button> -->
         </form>
       </div>

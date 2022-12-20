@@ -18,9 +18,9 @@ header {
 }
 
 nav {
-  z-index: 1;
+  z-index: 999;
   top: 0;
-  padding-top: 5px;
+  padding: 0.2rem 1rem 0.2rem 0;
   position: fixed;
   width: 100%;
   display: flex;
@@ -40,13 +40,13 @@ nav {
   margin: 0 1rem;
 }
 
-.leftBar p{
+.leftBar p {
   margin-left: 20px;
   vertical-align: text-top;
   font-size: 0.8rem;
 }
 
-nav li p{
+nav li p {
   display: none;
 }
 
@@ -78,13 +78,10 @@ nav li {
   position: absolute;
   background-color: #f9f7f2;
   min-width: 150px;
-  /* min-height: 100px; */
   padding-top: 1.5rem;
 }
 
 .dropdown-content a {
-  /* height: 100px; */
-  /* padding: 50px 16px; */
   padding: 1rem 10px;
 }
 
@@ -142,6 +139,10 @@ footer {
   font-weight: bold;
 }
 
+footer a {
+  text-decoration: none;
+}
+
 footer .leftBar {
   flex-direction: column;
   max-width: 500px;
@@ -154,26 +155,19 @@ footer .leftBar {
 }
 
 .footerLogo {
-  margin: 0 2rem;
+  margin: 0 1rem;
   opacity: 0.5;
   width: 36px;
   height: 36px;
 }
 
-@media screen and (max-width: 1200px) {
-
-}
-
-@media screen and (max-width: 1000px) {
-
-}
-
-@media screen and (max-width: 800px) {
-  .leftBar p{
+/* TABLET */
+@media screen and (max-width: 900px) {
+  .leftBar p {
     display: none;
   }
 
-  nav li p{
+  nav li p {
     display: block;
   }
 
@@ -185,7 +179,7 @@ footer .leftBar {
     display: block;
   }
 
-  nav li{
+  nav li {
     float: none;
     display: block;
     text-align: center;
@@ -196,6 +190,7 @@ footer .leftBar {
     position: relative;
     text-align: center;
     background-color: #b8b8b1;
+    padding-top: 0.2rem;
   }
 
   .dropdown:hover .dropdown-content a {
@@ -214,8 +209,46 @@ footer .leftBar {
     float: right;
     margin-left: auto;
   }
+
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  footer .leftBar {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0;
+  }
+
+  footer .leftBar p {
+    display: initial;
+  }
 }
 
-@media screen and (max-width: 600px) {
-
+/* Phone */
+@media screen and (max-width: 500px) {
+  h1,
+  h2 {
+    font-size: x-large;
+  }
+  .p-primary {
+    font-size: small;
+  }
+  .p-secondary {
+    font-size: x-small;
+  }
+  #footerMainLogo {
+    width: 150px;
+  }
+  footer .p-secondary {
+    font-size: x-small;
+  }
+  .footerLogo {
+    width: 30px;
+    height: 30px;
+  }
 }

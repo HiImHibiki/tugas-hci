@@ -1,8 +1,6 @@
-// Get needed constant value
-const width = $('.slider .slide').width();
+let width = $('.slider .slide').width();
 const slideDuration = $('.slider').data('slideDuration');
 
-// Initialize slide position and move our slider container to the right spot
 $('.slider .slide:last').prependTo($('.slider'));
 $('.slider').css('left', -width);
 
@@ -22,3 +20,7 @@ const handleNext = () => {
 
 $('.next.slider-control').on('click', () => handleNext());
 $('.prev.slider-control').on('click', () => handlePrev());
+
+const timer = setInterval(() => {
+  handleNext();
+}, 5000);
