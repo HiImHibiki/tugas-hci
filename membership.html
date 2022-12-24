@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script defer src="./scripts/validator.js"></script>
+    <script defer src="./scripts/index.js"></script>
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/membership.css" />
     <title>Membership</title>
@@ -64,13 +65,11 @@
             id="confirm_password"
           />
 
-          <input type="text" name="city" placeholder="City" id="city" />
-          <input
-            type="text"
-            name="address"
-            placeholder="Address"
-            id="address"
-          />
+          <select name="" id="city">
+            <option value="jakarta">Jakarta</option>
+            <option value="tokyo">Tokyo</option>
+            <option value="paris">Paris</option>
+          </select>
 
           <input type="checkbox" id="tnc" />
           <label for="tnc"
@@ -118,14 +117,3 @@
     </footer>
   </body>
 </html>
-
-<script>
-  function myFunction() {
-    var x = document.getElementById('rightnav');
-    if (x.className === 'rightBar') {
-      x.className += ' hide';
-    } else {
-      x.className = 'rightBar';
-    }
-  }
-</script>
